@@ -1,0 +1,166 @@
+<html>
+<head><title>shanmugaraj ECMA6 ADVANCE CONCEPT</title>
+</head>
+<body>
+<p id="para"></p>
+<p id="per"></p>
+
+<input type="text" id="input">
+<button id="button">REMOVE</button>
+
+
+
+
+<script>
+
+  <!-- var a=[1,2,3,4,5] -->
+  <!-- var b=null -->
+  <!-- var c=[] -->
+    <!-- for(i=0;i<a.length;i++){ -->
+	    <!-- b=b+a[i] -->
+		<!-- c[0]=b -->
+		<!-- } -->
+	  <!-- console.log(c) -->
+<!-----------------------------------Reverse of number--------------------------------------------------------------->
+	<!-- var a=[1,2,3,4,5,6,7] -->
+	<!-- var b=[] -->
+	<!-- var c=[] -->
+	<!-- for(i=a.length-1;i>=0;i--){ -->
+	    <!-- b=b+a[i] -->
+		<!-- } -->
+		<!-- c.push(b) -->
+	 	<!-- console.log(c) -->
+    		
+<!----------------------------------filter method in javascript---------------------------------------------------->
+   <!-- var a=[1,2,3,4,5] -->
+    <!-- for(i=0;i<a.length;i++){ -->
+      <!-- if(a[i]===9){ -->
+          <!-- console.log("it is your have") -->
+            <!-- } -->
+        <!-- else{ -->
+           <!-- console.log("it is not have") -->
+       <!-- } -->
+<!-- } -->
+<!-----------------------------------------filter method in javascript---------------------------------------------------->
+    var a=[{name:"shanmugaraj",
+            wife:"poornima",
+            age:24
+           },
+           {name:"poornima",
+            husband:"shanmugaraj",
+            age:23
+           },
+		   {name:"keerthana",
+            husband:"shanmugaraj",
+            age:15
+           },
+		   {name:"poornima",
+            husband:"shanmugaraj",
+            age:23
+           },
+           ]
+     var b=a.findIndex((c)=>{
+	      return  c.age===15
+		  })
+		  console.log(b)
+<!----------------------------------------pop method in javascript---------------------------------------------------->
+      <!-- var a=[1,2,3,4,5,6] -->
+      <!-- a.pop() -->
+      <!-- console.log(a) -->
+<!--------------------------------------------remove the last element of the array-------------------------------------->
+<!------------------------------------------map method give new array of the element-------------------------------->
+   <!-- var a=[1,2,3,4,5] -->
+   <!-- var c=[] -->
+       <!-- c=a.map((b)=>{ -->
+          <!-- return b -->
+<!-- })	 -->
+  <!-- console.log(c)	 -->
+ <!---------------------------------fill method fill-------------------------------------------------------------->
+  <!-- var a=[1,2,3,4,5,6] -->
+    <!-- a.fill("M.shanmugaraj",7,8) -->
+   <!-- console.log(a)	 -->
+ <!-----------------------------------find----------------------------------->
+            <!-- var a=[{name:"shanmugaraj", -->
+            <!-- wife:"poornima", -->
+            <!-- age:5 -->
+           <!-- }, -->
+           <!-- {name:"poornima", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:9 -->
+           <!-- }, -->
+		   <!-- {name:"jain", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:21 -->
+           <!-- }, -->
+		   <!-- {name:"poornima", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:7 -->
+           <!-- }, -->
+		   <!-- {name:"shanmugaraj", -->
+            <!-- wife:"poornima", -->
+            <!-- age:5 -->
+           <!-- }, -->
+           <!-- {name:"kesavan", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:20 -->
+           <!-- }, -->
+		   <!-- {name:"simbu", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:23 -->
+           <!-- }, -->
+		   <!-- {name:"harvic", -->
+            <!-- husband:"shanmugaraj", -->
+            <!-- age:25 -->
+           <!-- } -->
+           <!-- ] -->
+		   <!-- var c=a.filter((b)=>{ -->
+		      <!-- return b.age>18  -->
+			  <!-- }) -->
+            <!-- for(z of c){ -->
+         <!-- console.log(z.name) -->
+		
+<!-- }		 -->
+      <!-- var a=["shanmugaraj","poornima","poornimashanmugaraj"] -->
+	  <!-- var para=document.getElementById("para") -->
+	  <!-- var b=a.includes("poornima"); -->
+	    <!-- para.innerHTML=b -->
+<!------------------------------------join methods-------------------------------------------------------------------->
+ /*join method seperated by specified seperators*/
+    <!-- var a=["shanmugaraj","poornima","poornimashanmugaraj","manikharnigha"] -->
+	 <!-- var para=document.getElementById("para") -->
+	 <!-- var b=a.join("&nbsp;&nbsp") -->
+       <!-- para.innerHTML=b -->
+<!------------------------------------sort method is if arra element is string arrange alphbetical order------------>
+               <!-- var a=["shanmugaraj","poornima","poornimashanmugaraj","manikharnigha"] -->
+				var para=document.getElementById("para").innerHTML
+				/* and is arrange order of number-------*/
+				<!-- var n=[100,2,30,40,50,2,3,89,90] -->
+				 <!-- var c=n.sort((a,b)=>{ -->
+				      <!-- return b-a -->
+				   <!-- }) -->
+				   <!-- var para=document.getElementById("para").innerHTML=c[0] -->
+<!---------------------------shift method remove first item of array,and change the original array------------------>
+               var a=["shanmugaraj","poornima","poornimashanmugaraj","manikharnigha"]
+				var b=a.shift()
+              var para=document.getElementById("para").innerHTML=b	
+        var z=[{name:"shanmugaraj",
+            wife:"poornima",
+            age:24
+           },
+           {name:"poornima",
+            husband:"shanmugaraj",
+            age:23
+           },
+		   {name:"keerthana",
+            husband:"shanmugaraj",
+            age:15
+           },
+		   {name:"poornima",
+            husband:"shanmugaraj",
+            age:23
+           },
+           ]
+       z.shift()		   
+</script>
+</body>
+</html>
